@@ -1,22 +1,44 @@
-```
-pip install langchain langchain-huggingface
-```
+# Huggingface Langchain Hello World
+
+# Hugging Face LangChain App
+
+This project demonstrates how to use the LangChain library in conjunction with Hugging Face models for text generation.
+
+## Installation
+
+To get started, you need to install the required dependencies. You can do this by running:
 
 ```
-HUGGINGFACEHUB_API_TOKEN="your_huggingface_token_here"
+pip install -r requirements.txt
 ```
 
-```
-from langchain_huggingface import HuggingFaceEndpoint
+This will install the following packages:
 
-# Connect to a Hugging Face hosted model (replace with any available model repo id)
-llm = HuggingFaceEndpoint(
-    repo_id="mistralai/Mistral-Nemo-Instruct-2407",  # example model
-    task="text-generation",
-    max_new_tokens=100
-)
+- langchain
+- langchain-huggingface
 
-# Generate response
-output = llm.predict("Write a short poem about Hong Kong")
-print(output)
+## Setup
+
+Before running the application, make sure to set your Hugging Face API token. You can do this by setting the environment variable:
+
 ```
+export HUGGINGFACEHUB_API_TOKEN="your_huggingface_token_here"
+```
+
+## Usage
+
+To run the application, execute the main script:
+
+```
+python src/main.py
+```
+
+The script connects to a specified Hugging Face model and generates text based on a given prompt.
+
+## Example
+
+In the `src/main.py` file, you can find an example of how to connect to a Hugging Face hosted model and generate a response. The current example generates a short poem about Hong Kong.
+
+## Contributing
+
+Feel free to contribute to this project by submitting issues or pull requests. Your contributions are welcome!
