@@ -35,9 +35,20 @@ python src/main.py
 
 The script connects to a specified Hugging Face model and generates text based on a given prompt.
 
-## Example
+## Hello World Example
 
 In the `src/main.py` file, you can find an example of how to connect to a Hugging Face hosted model and generate a response. The current example generates a short poem about Hong Kong.
+
+## Template Prompt Example
+
+You can also use prompt templates for more flexible text generation.  
+Run the template prompt example script:
+
+```
+python src/template_prompt_example.py
+```
+
+This script demonstrates how to use LangChain's `PromptTemplate` to dynamically create prompts for Hugging Face models.
 
 ## Contributing
 
