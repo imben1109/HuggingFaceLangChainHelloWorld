@@ -50,6 +50,15 @@ python src/template_prompt_example.py
 
 This script demonstrates how to use LangChain's `PromptTemplate` to dynamically create prompts for Hugging Face models.
 
-## Contributing
+## Retrieval-Augmented Generation (RAG) Example
 
-Feel free to contribute to this project by submitting issues or pull requests. Your contributions are welcome!
+This project includes a simple RAG example that combines document retrieval with language model generation.  
+To run the RAG example:
+
+```
+python src/rag_example.py
+```
+
+This script demonstrates how to use LangChain's `InMemoryRetriever` and `RetrievalQA` chain with Hugging Face models.  
+It retrieves relevant information from sample documents and generates an answer using the LLM.
+
